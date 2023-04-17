@@ -1,0 +1,88 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "flutter_introduccion",
+            "cwd": "Proyectos de ciclo\\flutter_introduccion",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_introduccion (profile mode)",
+            "cwd": "Proyectos de ciclo\\flutter_introduccion",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_introduccion (release mode)",
+            "cwd": "Proyectos de ciclo\\flutter_introduccion",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "flutter_parcial",
+            "cwd": "Proyectos de ciclo\\flutter_parcial",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_parcial (profile mode)",
+            "cwd": "Proyectos de ciclo\\flutter_parcial",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_parcial (release mode)",
+            "cwd": "Proyectos de ciclo\\flutter_parcial",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "flutter_parcial1",
+            "cwd": "Proyectos de ciclo\\flutter_parcial1",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_parcial1 (profile mode)",
+            "cwd": "Proyectos de ciclo\\flutter_parcial1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_parcial1 (release mode)",
+            "cwd": "Proyectos de ciclo\\flutter_parcial1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "flutter_parcial2",
+            "cwd": "Proyectos de ciclo\\flutter_parcial2",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "flutter_parcial2 (profile mode)",
+            "cwd": "Proyectos de ciclo\\flutter_parcial2",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "flutter_parcial2 (release mode)",
+            "cwd": "Proyectos de ciclo\\flutter_parcial2",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
