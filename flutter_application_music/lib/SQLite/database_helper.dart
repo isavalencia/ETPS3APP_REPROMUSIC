@@ -5,9 +5,8 @@ import 'package:sqflite/sqflite.dart';
 class DatabaseHelper {
   final databaseName = "usuarios.db";
   String userTable =
-      "create table users (userId integer primary key autoincrement, userName Text,  userEmail Text, userPassword Text)";
-  String userData =
-      "insert into users values(1,'flutter','flu95@gmail.com','123')";
+      "create table users (userId integer primary key autoincrement, userName Text, userPassword Text)";
+  String userData = "insert into users values(1,'flutter','123')";
   Future<Database> initDB() async {
     final databasePath = await getDatabasesPath();
     final path = join(databasePath, databaseName);

@@ -15,9 +15,7 @@ class SignUp extends StatefulWidget {
 class _SignUpState extends State<SignUp> {
   final userId = TextEditingController();
   final userName = TextEditingController();
-  final userEmail = TextEditingController();
   final userPassword = TextEditingController();
-  final userCPassword = TextEditingController();
 
   final formKey = GlobalKey<FormState>();
 
@@ -26,8 +24,7 @@ class _SignUpState extends State<SignUp> {
     var result = db.createUsers(Users(
         userName: userName.text,
         userPassword: userPassword.text,
-        userId: userId.text,
-        userEmail: userEmail.text));
+        userId: userId.text));
     // ignore: unrelated_type_equality_checks
     if (result != -1) {
       Navigator.push(
@@ -166,42 +163,6 @@ class _SignUpState extends State<SignUp> {
                     style: TextStyle(
                       color: Colors.white,
                     ),
-                    controller: userEmail,
-                    decoration: const InputDecoration(
-                      border: InputBorder.none,
-                      hintText: "Email",
-                      hintStyle: TextStyle(
-                        color: Colors.grey,
-                      ),
-                      prefixIcon: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 20),
-                        child: Icon(
-                          FontAwesomeIcons.userCircle,
-                          color: Colors.white,
-                          size: 28,
-                        ),
-                      ),
-                    ),
-                    validator: (value) {
-                      if (value!.isEmpty) {
-                        return "Email is empty";
-                      } else {
-                        userEmail.text = value;
-                      }
-                      return null;
-                    },
-                  ),
-                ),
-                SizedBox(height: 5),
-                Container(
-                  decoration: BoxDecoration(
-                    color: Colors.teal.withOpacity(0.9),
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: TextFormField(
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
                     controller: userPassword,
                     obscureText: _obscureText,
                     decoration: const InputDecoration(
@@ -236,18 +197,16 @@ class _SignUpState extends State<SignUp> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20),
                     ),
-                    minWidth: size.width * .90,
-                    height: 50,
                     color: Color.fromARGB(255, 2, 104, 78),
+                    minWidth: MediaQuery.of(context).size.width * .95,
+                    height: 50,
                     child: Text(
-                      "Registrarse",
+                      "Crear Cuenta",
                       style: TextStyle(color: Colors.white, fontSize: 18),
                     ),
                     onPressed: () {
-                      if (formKey.currentState!.validate()) {
-                        //Login funtions
-                        createUsers();
-                      }
+                      //Singup method
+                      createUsers();
                     }),
                 SizedBox(
                   height: 100,

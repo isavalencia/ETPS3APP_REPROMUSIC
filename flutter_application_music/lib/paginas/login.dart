@@ -25,10 +25,10 @@ class _LoginState extends State<Login> {
   login() async {
     final db = DatabaseHelper();
     db.authentication(Users(
-        userName: userName.text,
-        userPassword: userPassword.text,
-        userId: '',
-        userEmail: ''));
+      userName: userName.text,
+      userPassword: userPassword.text,
+      userId: '',
+    ));
     if (result == result) {
       Navigator.push(context, MaterialPageRoute(builder: (context) => Menu()));
     } else {
